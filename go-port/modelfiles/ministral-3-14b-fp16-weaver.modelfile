@@ -1,0 +1,16 @@
+# Ministral-3 14B FP16 optimized for Weaver Code
+# 34K context window - fits comfortably on single A6000 (48GB VRAM)
+# Run: ollama create ministral-3:14b-weaver -f ministral-3-14b-fp16-weaver.modelfile
+
+FROM ministral-3:14b-instruct-2512-fp16
+
+# 34K context - safe for single A6000 with 27GB model
+PARAMETER num_ctx 34816
+
+# Coding-optimized temperature
+PARAMETER temperature 0.7
+
+# Mistral-recommended defaults for instruct models
+PARAMETER top_k 50
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.1

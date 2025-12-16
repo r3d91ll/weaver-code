@@ -1,0 +1,16 @@
+# Qwen3-Coder 30B optimized for Weaver Code
+# 256K context window for full codebase understanding
+# Run: ollama create qwen3-coder:30b-weaver -f qwen3-coder-weaver.modelfile
+
+FROM qwen3-coder:30b
+
+# Set maximum context window (256K tokens)
+PARAMETER num_ctx 262144
+
+# Coding-optimized temperature
+PARAMETER temperature 0.7
+
+# Keep other qwen3-coder defaults
+PARAMETER top_k 20
+PARAMETER top_p 0.8
+PARAMETER repeat_penalty 1.05

@@ -1,0 +1,15 @@
+# GPT-OSS 20B optimized for Weaver Code
+# Max context window for full codebase understanding
+# Run: ollama create gpt-oss:20b-weaver -f gpt-oss-weaver.modelfile
+
+FROM gpt-oss:20b
+
+# Set maximum context window (131072 tokens)
+PARAMETER num_ctx 131072
+
+# Slightly lower temperature for more deterministic code generation
+PARAMETER temperature 0.7
+
+# Stop sequences for cleaner tool call parsing
+PARAMETER stop "<|end|>"
+PARAMETER stop "<|start|>user"

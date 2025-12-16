@@ -48,3 +48,16 @@ poetry.lock
 # OS
 .DS_Store
 Thumbs.db
+
+# Go
+go-port/weaver
+go-port/build/
+*.exe
+
+# Training data (stored separately)
+training_data/
+
+# Assessment test artifacts
+go-port/*.py
+go-port/*.txt
+!go-port/README.md
