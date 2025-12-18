@@ -1,5 +1,8 @@
 # Weaver Code
 
+"Information and meaning may prove to be something like a pair of canonically conjugate variables in quantum theory, they being Panarchy subject to some joint restriction that condemns a person to the sacrifice of the one as he insists on having much of the other."
+— Warren Weaver, "Recent Contributions to the Mathematical Theory of Communication" (1949)
+
 **Give Claude a Junior Engineer** - delegate tasks to local models.
 
 Claude Code manages a local model assistant (Junior Engineer) for parallel development, code generation, and task delegation.
